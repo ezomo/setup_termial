@@ -17,4 +17,4 @@ sudo apt-get install vim;
 cp -f .vimrc  ~/.vimrc;
 
 chsh -s /usr/bin/zsh;
-reboot;
+sudo reboot;

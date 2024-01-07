@@ -14,7 +14,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc;
 cat settings.txt >> ~/.zshrc;
 
 sudo apt-get install vim;
-cp .vimrc -f ~/.vimrc;
+cp -f .vimrc  ~/.vimrc;
 
 chsh -s /usr/bin/zsh;
 reboot;

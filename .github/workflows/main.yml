@@ -13,4 +13,7 @@ jobs:
         uses: actions/checkout@v4
       - name: List files in the repository
         run: ls ${{ github.workspace }}
+      - name: operation check
+        run: . ./setup.sh
+        
       - run: echo "🍏 This job's status is ${{ job.status }}."

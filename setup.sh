@@ -1,7 +1,8 @@
-sudo apt-get update && sudo apt-get upgrade;
-sudo apt-get install zsh;
+apt-get update;
+echo "yes" | sudo apt-get upgrade;
+echo "yes" | apt-get install zsh;
 
-# エラー回避
+# \u30a8\u30e9\u30fc\u56de\u907f
 touch ~/.zshrc;
 sh -c "$(curl -fsSL https://git.io/zinit-install)";
 cp .zshrc -f ~/.zshrc;
@@ -13,8 +14,8 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc;
 
 cat settings.txt >> ~/.zshrc;
 
-sudo apt-get install vim;
+apt-get install vim;
 cp -f .vimrc  ~/.vimrc;
 
 chsh -s /usr/bin/zsh;
-sudo reboot;
+reboot;

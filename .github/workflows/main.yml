@@ -15,5 +15,5 @@ jobs:
         run: ls ${{ github.workspace }}
       - name: operation check
         run: ls && pwd
-        
+      - run: sudo sh ./setup.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."

@@ -18,3 +18,5 @@ apt-get install vim;
 cp -f .vimrc  ~/.vimrc;
 
 chsh -s /usr/bin/zsh;
+source ~/.zshrc;
+zsh;
